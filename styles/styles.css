@@ -1,0 +1,439 @@
+:root {
+  --primary-bgncolor: #2f303a;
+  --secondary-bgncolor: #f5f4fa;
+
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-text-color: #2196f3;
+  --secondary-accent-text-color: #ffffff;
+  --logo-text-color: #000000;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+
+  --primary-font: 'Roboto', sans-serif;
+}
+
+body {
+  color: var(--primary-text-color);
+  font-family: var(--primary-font);
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.address {
+  font-style: normal;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+/* ========================COMPONENTS======================== */
+.acent-logo {
+  color: var(--accent-text-color);
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.container {
+  /* margin-left: auto;
+  margin-right: auto; */
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  /* outline: 2px solid tomato; */
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+/* ======================END COMPONENTS====================== */
+
+/* ========================HEADER======================== */
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header > .container {
+  display: flex;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  color: var(--logo-text-color);
+}
+
+.header-logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.navigation-list {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation-link {
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+  color: var(--accent-text-color);
+}
+
+.active {
+  color: var(--accent-text-color);
+}
+
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts-link {
+  color: var(--secondary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-text-color);
+}
+
+/* ======================END HEADER====================== */
+
+/* ========================HERO======================== */
+.hero {
+  background-color: var(--primary-bgncolor);
+}
+
+.hero > .container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.hero-title {
+  margin: 0 auto 30px;
+  width: 696px;
+
+  color: var(--secondary-accent-text-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.main-btn {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  margin: 0 auto;
+  min-width: 200px;
+  padding: 10px 32px;
+
+  color: var(--secondary-accent-text-color);
+  background-color: var(--accent-text-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  /* text-align: center; */
+  letter-spacing: 0.06em;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.main-btn:hover,
+.main-btn:focus {
+  background-color: #188ce8;
+}
+/* ======================END HERO====================== */
+
+/* ========================FEATURES======================== */
+.features {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
+
+.features-list {
+  display: flex;
+}
+.features-item {
+  min-width: 270px;
+}
+
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features-subtitle {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features-text {
+  color: var(--secondary-text-color);
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+/* ======================END FEATURES====================== */
+
+/* ========================SPECIALIZATION======================== */
+.specialization {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+
+.title-specialization {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.specialization-list {
+  display: flex;
+}
+
+.specialization-item:not(:last-child) {
+  margin-right: 30px;
+}
+/* ======================END SPECIALIZATION====================== */
+
+/* ========================TEAM======================== */
+.team {
+  background-color: var(--secondary-bgncolor);
+}
+
+.title-team {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.container > .team-list {
+  display: flex;
+}
+
+.team-item:not(:nth-child(4n + 4)) {
+  margin-right: 30px;
+}
+
+.team-box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-text {
+  color: var(--secondary-text-color);
+
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* ======================END TEAM====================== */
+
+/* ========================FOOTER======================== */
+.footer {
+  background-color: var(--primary-bgncolor);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+
+  color: var(--secondary-accent-text-color);
+}
+
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address-link-map {
+  color: var(--secondary-accent-text-color);
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.address-link-map:hover,
+.address-link-map:focus,
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-text-color);
+}
+
+.address-link {
+  color: var(--footer-text-color);
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+/* ======================END FOOTER====================== */
+
+/* ------------------------PORTFOLIO---------------------- */
+/* ========================FILTER======================== */
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter-btn {
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 6px 22px;
+
+  background-color: var(--secondary-bgncolor);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--secondary-accent-text-color);
+  background-color: var(--accent-text-color);
+}
+/* ======================END FILTER====================== */
+
+/* ========================CARDS======================== */
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards-item:not(:nth-child(3n + 3)) {
+  margin-right: 30px;
+}
+
+.cards-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+.cards-box {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 20px 24px;
+}
+
+.cards-title {
+  color: var(--primary-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.cards-text {
+  color: var(--secondary-text-color);
+
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
